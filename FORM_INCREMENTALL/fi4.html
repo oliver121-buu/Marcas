@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            P4
+        </title>
+        <script type="text/javascript" src="utilidades1.js"></script>
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet"/>
+        <script>
+            function cargarDatos()
+            {
+                setValue("sResulN2",getValue("sResulN1"));
+                setValue("sResulPass2",getValue("sResulPass1"));
+                setValue("sResulCon111",(getValue("sResulCon11") * 1) +1 );
+                setValue("sResulCon22",(getValue("sResulCon2") * 1) + 2);
+                setValue("sResulList1",getValue("sResulList"));
+                setValue("sHB",getValue("sCumple"));
+                setValue("sEmaill",getValue("sEmail"));
+                setValue("sMonth",getValue("sMes"));
+                setValue("sRank",getValue("sRango"));
+                setValue("sDay1",getValue("sDay"))
+            }
+        </script>
+    </head>
+    <body onload="cargarDatos()" class="bg-dark">
+        <div class="bg-light d-flex container">
+            <form action="fi1.html">
+                <div>
+                    <label>
+                        Nombre:
+                    </label>
+                    <input type="text" name="sResulN2" id="sResulNombre" readonly>
+                </div>
+                <br>
+                <div>
+                    <label>
+                        Password
+                    </label>
+                    <input type="password" name="sResulPass2" readonly>
+                </div>
+                <br>
+                <div>
+                    <label>
+                        Nº Lista:
+                    </label>
+                    <input type="number" name="sResulList1" readonly>
+                </div>
+                <br>
+                <div>
+                    <label>
+                        Día
+                    </label>
+                    <input type="date" name="sDay1" readonly>
+                </div>
+                <br>
+                <div>
+                    <label>
+                        Contador +1
+                    </label>
+                    <input type="number" name="sResulCon111" readonly>
+                </div>
+                <br>
+                <div>
+                    <label>
+                        Contador +2
+                    </label>
+                    <input type="number" name="sResulCon22" readonly>
+                </div>
+                <br>
+                <div>
+                    <label>
+                        Fecha cumple
+                    </label>
+                    <input type="date" name="sHB" readonly>
+                </div>
+                <br>
+                <div>
+                    <label>
+                        email
+                    </label>
+                    <input type="email" name="sEmaill" readonly>
+                </div>
+                <br>
+                <div>
+                    <label>
+                        Mes actual
+                    </label>
+                    <input type="month" name="sMonth" readonly>
+                </div>
+                <br>
+                <div>
+                    <label>
+                        rango
+                    </label>
+                    <input type="range" name="sRank" disabled>
+                </div>
+                <br>
+                <div>
+                    <input type="submit" value="Enviar">
+                </div>
+            </form>
+        </div>
+    </body>
+</html>
