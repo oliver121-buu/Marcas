@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            Sweet Alert
+        </title>
+        <link rel="icon" type="image/x-icon" href="https://images.emojiterra.com/microsoft/fluent-emoji/15.1/1024px/26a0_color.png">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+        <script>
+            function showAlert ()
+            {
+                Swal.fire(
+                {
+                    title: '<div style="background-color: #ff6e00; border-radius: 5px; display: inline-block; color: black;">Sistema de puntuación</div>',
+                    draggable:true,
+                    background: 'black',
+                    width: 'auto',
+                    html: `
+                        <table style="width: 100%; text-align: center; font-family: Arial, sans-serif;">
+                            <tr>
+                                <th style="padding: 4px;">
+                                    <img src="Imagenes/Pareja.png" height="210">
+                                </th>
+                                <th style="padding: 4px;">
+                                    <img src="Imagenes/Tres.png" height="210">
+                                </th>
+                                <th style="padding: 4px;">
+                                    <img src="Imagenes/Esca3Ref.png" height="210">
+                                </th>
+                                <th style="padding: 4px;">
+                                    <img src="Imagenes/Esca4Ref.png" height="210">
+                                </th>
+                            </tr>
+                            <tr>
+                                <td style="padding: 4px;">
+                                    <div style="background-color: #0000ff; border-radius: 5px; display: inline-block; color: black;">
+                                        Pareja (Nombre) <b>(2 puntos)</b>
+                                    </div>
+                                </td>
+                                <td style="padding: 4px;">
+                                    <div style="background-color: #0000ff; border-radius: 5px; display: inline-block; color: black;">
+                                        Trío (Nombre) <b>(3 puntos)</b>
+                                    </div>
+                                </td>
+                                <td style="padding: 4px;">
+                                    <div style="background-color: #0000ff; border-radius: 5px; display: inline-block; color: black;">
+                                        Escalera Referencia (Referencia) (3) <b>(6 puntos)</b>
+                                    </div>
+                                </td>
+                                <td style="padding: 4px;">
+                                    <div style="background-color: #0000ff; border-radius: 5px; display: inline-block; color: black;">
+                                        Escalera Referencia (Referencia) (4) <b>(8 puntos)</b>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th style="padding: 4px;">
+                                    <img src="Imagenes/Doble.png" height="210">
+                                </th>
+                                <th style="padding: 4px;">
+                                    <img src="Imagenes/Cuatro.png" height="210">
+                                </th>
+                                <th style="padding: 4px;">
+                                    <img src="Imagenes/RefColor3.png" height="210">
+                                </th>
+                                <th style="padding: 4px;">
+                                    <img src="Imagenes/RefColor4.png" height="210">
+                                </th>
+                            </tr>
+                            <tr>
+                                <td style="padding: 4px;">
+                                    <div style="background-color: #0000ff; border-radius: 5px; display: inline-block; color: black;">
+                                        Doble Pareja (Nombre) <b>(6 puntos)</b>
+                                    </div>
+                                </td>
+                                <td style="padding: 4px;">
+                                    <div style="background-color: #0000ff; border-radius: 5px; display: inline-block; color: black;">
+                                        Cuarteto (Nombre) <b>(10 puntos)</b>
+                                    </div>
+                                </td>
+                                <td style="padding: 4px;">
+                                    <div style="background-color: #0000ff; border-radius: 5px; display: inline-block; color: black;">
+                                        Escalera Color (3) (nombre y referencia) <b>(10 puntos)</b>
+                                    </div>
+                                </td>
+                                <td style="padding: 4px;">
+                                    <div style="background-color: #0000ff; border-radius: 5px; display: inline-block; color: black;">
+                                        Escalera Color (4) (nombre y referencia) <b>(15 puntos)</b>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th style="padding: 4px;">
+                                    <img src="Imagenes/Estrellas3.png" height="210">
+                                </th>
+                                <th style="padding: 4px;">
+                                </th>
+                                <th style="padding: 4px;">
+                                    <img src="Imagenes/Estrellas4.png" height="210">
+                                </th>
+                            </tr>
+                            <tr>
+                                <td style="padding: 10px;">
+                                    <div style="background-color: #0000ff; border-radius: 5px; display: inline-block; color: black; padding: 4px;">
+                                        ESCALERA ESTRELLAS (3) (estrellas) <b>(15 puntos)</b>
+                                    </div>
+                                </td>
+                                <td style="padding: 10px;">
+                                    <div style="background-color: #0000ff; border-radius: 5px; display: inline-block; color: black; padding: 4px;">
+                                        ESCALERA IMPERIAL (escalera que empiece por referencia 1) <b>(+1/3 del valor de la escalera)</b>
+                                    </div>
+                                </td>
+                                <td style="padding: 10px;">
+                                    <div style="background-color: #0000ff; border-radius: 5px; display: inline-block; color: black; padding: 4px;">
+                                        ESCALERA ESTRELLAS (4) (estrellas) <b>(20 puntos)</b>
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+                    `,
+                    color: "#ffffff",
+                    confirmButtonText: 'Entendido',
+                    confirmButtonColor: '#22c91c'
+                });
+            }
+        </script>
+    </head>
+    <body background="https://preview.redd.it/el-gremio-del-ocaso-liga-de-aventureros-v0-5sghuxo2id1b1.png?width=1600&format=png&auto=webp&s=1a97dad2b1ea00508985d62461cab6a63a15ffd0" style="margin: 0;background-repeat: no-repeat;background-size: cover;background-attachment: fixed;">
+        <div class="col-lg-3 my-4 mx-auto border rounded bg-warning text-center">
+            <span class="h1">
+                <b>
+                    Sweet Alert
+                </b>
+            </span>
+        </div>
+        <div class="my-5 mx-auto text-center ">
+            <button onclick="showAlert()"type="button" class="btn btn-danger">
+                <span class="h4">
+                    <b>
+                        GO!
+                    </b>
+                </span>
+            </button>
+        </div>
+    </body>
+</html>
