@@ -1,0 +1,89 @@
+body 
+{
+    margin: 0;
+    background-image: url('https://guadarrama.coffee/cdn/shop/articles/cafe-en-grano.jpg?v=1719926036&width=1100');
+    background-size: cover;
+    background-position: center;
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+    box-sizing: border-box;
+}
+.menu 
+{
+    background-color: #f3d8a6;
+    padding: 20px;
+    width: 100%;
+    max-width: 500px;
+    max-height: 700px;
+    min-width: 280px;
+    min-height: 630px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+h1 
+{
+  font-size: 35px;
+  margin: 0;
+  font-family: monospace;
+}
+.subtitulo 
+{
+    font-style: italic;
+    margin: 5px 1 10px;
+}
+hr {
+    border: #000000;
+    border-top: 2px solid #6a2e1c;
+    margin: 15px;
+}
+h2 
+{
+    margin: 15px;
+    font-size: 28px;
+}
+.icono1 
+{
+    width: auto;
+    height: 50px;
+    margin-bottom: 10px;
+}
+.icono2 
+{
+    width: auto;
+    height: 25px;
+    margin-bottom: 10px;
+}
+.lista 
+{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+li 
+{
+    display: flex;
+    justify-content: space-between;
+    margin: 8px;
+}
+.footer 
+{
+    font-size: 14px;
+    margin-top: 15px;
+}
+a 
+{
+    color: #ff7700;
+}
+a:hover 
+{
+    color: #ff0000;
+}
+a:active 
+{
+    color: #000000;
+}
